@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Markdown Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Created by Neil Reyes -->
+    <!-- GitHub: https://github.com/neil-re/ -->
+</head>
+<body>
+    <div class="container">
+        <h1>Markdown Converter</h1>
+        <textarea id="markdown-input" placeholder="Enter Markdown here..."></textarea>
+        <div class="buttons">
+            <button id="convert-html">Convert to HTML</button>
+            <button id="export-pdf">Export to PDF</button>
+        </div>
+        <h2>HTML Output</h2>
+        <div id="html-output"></div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/markdown-it/dist/markdown-it.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/file-saver/dist/FileSaver.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
